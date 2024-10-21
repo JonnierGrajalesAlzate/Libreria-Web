@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color:  lightsteelblue;
+}
+/*section*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px; 
+    flex-direction: column;
+}
+/*Menu*/
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 3px black;
+    padding: 30px;
+}
+nav a {
+    color: #000000;
+    border-radius: 50px;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    margin-left: -170vh;
+}
+.logo:hover{
+    background: #fff
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+nav ul li a:hover{
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+.activo{
+    width: 90px;
+    height: 90px;
+}
+/*desplegable*/
+.header__menu {
+    margin-right: 30px;
+    }
+    
+    .header__menu ul {
+    display: none;
+    list-style: none;
+    margin: 0px 0px 0px -14px;
+    padding: 0px;
+    position: relative;
+    width: 230px;
+    text-align: right;
+    }
+    
+    .header__menu:hover ul, ul:hover {
+    align-items: center;
+    display: block;
+    }
+    
+    .header__menu li {
+    margin: 10px 0px;
+    }    
+    .header__menu li a:hover {
+        align-items: center;
+    text-decoration: none;
+    }
+    
+    .header__menu--profile {
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    }  
+/*Contenido*/
+.contenido{
+    max-width: 700px;
+    background-color: transparent;
+    padding: 40px;
+    padding-left:110px ;
+    justify-content: center;
+}
+.contenido h2{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+}
+.contenido p{
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+/*Recomendados*/
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+.mas{
+    font-size: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+}
+.content h2, a {
+    color: rgba(255, 255, 255, .8);
+    margin: 10px 0;
+}
+
+.card:hover .content {
+    opacity: 1;
+}
+/*Redes*/
+.redes .boton{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    background: #CACACA;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+.redes .boton .icono{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.redes .boton .icono i{
+    font-size: 25px;
+    line-height: 60px;
+}
+.redes .boton span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.redes .boton:hover{
+    width: 200px;
+    text-align:left ;
+}
+.redes .boton:nth-child(1):hover .icono{
+    background: #4267b2;
+}
+.redes .boton:nth-child(2):hover .icono{
+    background: #128c7e;
+}
+.redes .boton:hover .icono i{
+    color: #fff;
+}
+.redes .boton:nth-child(1):hover span{
+    color: #4267b2;
+}
+.redes .boton:nth-child(2):hover span{
+    color: #128c7e;
+}
+footer{
+    text-align:center;
+    margin-top: -30px;
+}

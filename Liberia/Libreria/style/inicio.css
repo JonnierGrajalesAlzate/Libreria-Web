@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: lightsteelblue;
+}
+/*section*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px; 
+    flex-direction: column;
+}
+
+/*Nav bar*/
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 3px black;
+    padding: 26px;
+}
+nav .logo {
+    color: #000000;
+    border-radius: 50px;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    margin-left: -155vh;
+}
+.logo:hover{
+    background: #fff
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+nav ul li a:hover{
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+.activo{
+    width: 90px;
+    height: 90px;
+}
+/*body*/
+.container{
+    border:  2px solid #000000;
+    border-radius: 100px;
+    height: 90px;
+    width: 90px;
+    align-content: center;
+}
+.container img{
+    height: 95px;
+    width: 95px;
+    margin: -3px 0 0 -3px;
+}
+hr{
+    border: 2px solid black;
+    height: 40px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    justify-content: space-around;
+    width: 900px;
+    height: 250px;
+}
+.texto{
+    margin-top: 20px;
+    flex-direction: column;
+    font-size: 15px;
+    width: 200px;
+}
+.texto p{
+    margin-top: 10px;
+}
+.ilustracion{
+    width: 200px;
+    height: 100;
+    animation: formimg 2s linear infinite;
+}
+.ilustracion img{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.botones button{
+    height: 40px;
+    width: 80px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+.botones a{
+    text-decoration: none;
+    color: #000000;
+}
+.botones button:hover{
+    background-color: #CACACA;
+}
+/*pop up*/
+.modal-container{
+    display: flex;
+    background-color: rgba(176, 196, 222, 0.562);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal{
+    background-color: #FDFDBD;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px black;
+    text-align: center;
+}
+.modal h1{
+    margin: 10px;
+}
+.modal p{
+    margin: 10px;
+    font-size: 20px;
+}
+.modal img{
+    width: 70px;
+    height: 70px;
+}
+/*Redes*/
+.redes .boton{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    background: #CACACA;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+.redes .boton .icono{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.redes .boton .icono i{
+    font-size: 25px;
+    line-height: 60px;
+}
+.redes .boton span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.redes .boton:hover{
+    width: 200px;
+    text-align:left ;
+}
+.redes .boton:nth-child(1):hover .icono{
+    background: #4267b2;
+}
+.redes .boton:nth-child(2):hover .icono{
+    background: #099110;
+}
+.redes .boton:hover .icono i{
+    color: #fff;
+}
+.redes .boton:nth-child(1):hover span{
+    color: #4267b2;
+}
+.redes .boton:nth-child(2):hover span{
+    color: #099110;
+}
+.boton i{
+    color: #000000;
+}
+footer{
+    text-align:center;
+    margin-top: -80px;
+}
+/*img*/
+@keyframes formimg {
+    0%,100%{
+        transform: translatey(25px);
+    }
+    50%{
+        transform: translatey(10px);
+    }
+}
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 20px 10px;
+    }
+    
+}

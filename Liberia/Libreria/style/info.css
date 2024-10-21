@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: lightsteelblue;
+}
+/*section*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px; 
+    flex-direction: column;
+}
+/*Menu*/
+nav{
+    position: absolute;
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 3px black;
+}
+nav .logo{
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 8px 15px;
+    list-style: none;
+    font-size: 30px;
+}
+.logo:hover{
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    list-style: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+nav ul li a:hover,
+nav ul li a.activo{
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+/*nosotros*/
+.bloque{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+.tarjeta{
+    width: 300px;
+    height: 350px;
+    background-color: #CACACA;  
+    text-align: center;
+    padding: 50px;
+    border-radius: 25px;
+    margin: 20px;
+}
+.imagen{
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    border: 2px solid;
+    margin-left: 25%;
+}
+.imagen img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 1px;
+    
+}
+.tarjeta h3{
+    margin-top: 30px;
+}
+.tarjeta p{
+    margin-top: 25px;
+}
+/*slider*/
+.slider{
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 1200px;
+    list-style: none;
+}
+.slider .bloque{
+    width: 1150px;
+    height: 400px;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider .bloque{
+    height: 100vh;
+}
+}
+/*Redes */
+.redes .boton{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 20px 5px;
+    background: #CACACA;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+.redes .boton .icono{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.redes .boton .icono i{
+    font-size: 25px;
+    line-height: 60px;
+    color: #000000;
+}
+
+

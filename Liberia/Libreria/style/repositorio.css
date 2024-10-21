@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: lightsteelblue;
+}
+/*section*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px; 
+    flex-wrap: wrap;
+}
+/*Menu*/
+nav{
+    position: absolute;
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 3px black;
+}
+nav .logo{
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 8px 15px;
+    list-style: none;
+    font-size: 30px;
+}
+.logo:hover{
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    list-style: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+nav ul li a:hover,
+nav ul li a.activo{
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+nav  i{
+    color: #000000;
+}
+/* From uiverse.io by @alexruix */
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   
+   .input {
+    width: 1400px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.4);
+    background-color: transparent;
+    box-shadow: 0 0 0 2px rgb(199, 197, 197);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }   
+/*libros*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px ;
+}
+.card {
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.content h2, a {
+    color: rgba(255, 255, 255, .8);
+    margin: 10px 0;
+}
+
+.card:hover .content {
+    opacity: 1;
+}
+/*Redes*/
+.redes .boton{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    background: #CACACA;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+.redes .boton .icono{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.redes .boton .icono i{
+    font-size: 25px;
+    line-height: 60px;
+}
+.redes .boton span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.redes .boton:hover{
+    width: 200px;
+    text-align:left ;
+}
+.redes .boton:nth-child(1):hover .icono{
+    background: #4267b2;
+}
+.redes .boton:nth-child(2):hover .icono{
+    background: #099110;
+}
+.redes .boton:hover .icono i{
+    color: #fff;
+}
+.redes .boton:nth-child(1):hover span{
+    color: #4267b2;
+}
+.redes .boton:nth-child(2):hover span{
+    color: #099110;
+}
+.boton i{
+    color: #000000;
+}
+footer{
+    text-align:center;
+    margin-top: -80px;
+}
